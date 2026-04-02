@@ -38,3 +38,5 @@ echo "✅ Installation complete! Please test with your camera app (Cheese or guv
 
 sudo apt purge -y cheese
 sudo apt autoremove -y
+
+sudo apt install guvcview
