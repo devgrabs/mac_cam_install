@@ -1,4 +1,3 @@
-cat << 'EOF' > install_mac_cam.sh
 #!/bin/bash
 
 echo "🚀 Starting FaceTime HD Camera driver installation for MacBook Air..."
@@ -36,7 +35,6 @@ if ! grep -q "facetimehd" /etc/modules; then
 fi
 
 echo "✅ Installation complete! Please test with your camera app (Cheese or guvcview)."
-EOF
 
-# Grant execution permission
-chmod +x install_mac_cam.sh
+sudo apt purge -y cheese
+sudo apt autoremove -y
